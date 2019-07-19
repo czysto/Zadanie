@@ -1,11 +1,38 @@
 ﻿<!DOCTYPE html>
+<html lang="pl">
 
-<html xmlns="http://www.w3.org/1999/xhtml">
 <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <meta charset="UTF-8">
+    <title>Pierwszy komponent w React.js</title>
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone/babel.js"></script>
 </head>
-<body>
 
+
+
+<body>
+    <div id="app"></div>
+    <script type="text/babel">
+
+
+
+        function MojKomponent() {
+        return (
+        <div>
+            <h1>Dodawanie pliku</h1>
+            <h2>Masz szanse dodać nowy plik</h2>
+        </div>
+        );
+        }
+
+      
+        ReactDOM.render(
+        <MojKomponent />,
+        document.getElementById('app')
+        );
+        
+    </script>
 </body>
+
 </html>

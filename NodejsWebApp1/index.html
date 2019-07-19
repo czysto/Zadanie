@@ -3,3 +3,47 @@
     <!-- scripts -->
     <script src="./dist/app-bundle.js"></script>
 </body>
+
+
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Lista dokumentów</title>
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+    <script src="https://unpkg.com/babel-standalone/babel.js"></script>
+</head>
+
+
+
+<body>
+    <div id="app"></div>
+    <script type="text/babel">
+
+
+        function MojKomponent({ title = "Modal", content }) {
+        return (
+        <div>
+            
+                <h1>{title}</h1>
+                <p>{content}</p>
+                <footer><a href="http://localhost:3000/adddocument.html">ADD</a></footer>
+                <footer><a href="http://localhost:3000/deletedocument.html">DELETE</a></footer>
+                <footer><a href="http://localhost:3000/modifydocument.html">MODIFY</a></footer>
+            
+        </div>
+        );
+        }
+
+        ReactDOM.render(
+        <MojKomponent 
+                       title="" 
+                       content="Zaskoczyłem Cie!!!" />,
+        document.getElementById('app')
+        );
+    </script>
+</body>
+
+</html>
