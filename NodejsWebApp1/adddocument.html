@@ -14,24 +14,45 @@
 <body>
     <div id="app"></div>
     <script type="text/babel">
+             
 
-
-
-        function MojKomponent() {
+        class App extends React.Component {
+        constructor() {
+        super();
+        this.state = {counter: 0};
+        }
+        
+        render() {
         return (
         <div>
             <h1>Dodawanie pliku</h1>
-            <h2>Masz szanse dodać nowy plik</h2>
+            <button onClick={this.increment.bind(this)}>+</button>
+            <output>{this.state.counter}</output>
+            <button onClick={this.decrement.bind(this)}>-</button>
+            <button ><a href="http://localhost:3000/index.html">Dodaj</a></button>
+            <button ><a href="http://localhost:3000/index.html">Anuluj</a></button>
         </div>
+
         );
         }
 
-      
+        increment() {
+        this.setState({
+        counter: this.state.counter + 1
+        })
+        }
+
+        decrement() {
+        this.setState({
+        counter: this.state.counter - 1
+        })
+        }
+        }
+
         ReactDOM.render(
-        <MojKomponent />,
-        document.getElementById('app')
+        <App />, document.getElementById("app")
         );
-        
+
     </script>
 </body>
 
