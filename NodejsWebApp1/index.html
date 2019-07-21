@@ -1,7 +1,10 @@
-﻿<body>
+﻿
+
+<body>
     <div id="root"></div>
     <!-- scripts -->
-    <script src="./dist/app-bundle.js"></script>
+
+<script src="./dist/app-bundle.js"></script>
 </body>
 
 
@@ -18,31 +21,34 @@
 </head>
 
 </html>
-  
 
-    
 
-        <div id="app">
-            <header className="ui fixed menu">
-                <nav className="ui container">
-                    <a href="#" className="header">
-                        Lista Dokumentów
-                    </a>
-                    <div className="header">
-                        <button className="ui button"><a href="http://localhost:3000/adddocument.html">Dodaj Dokument</a></button>
-                    </div>
-                </nav>
-            </header>
-        </div>
-        function AppHeader() {
-        return (
+<body>
+
+
+    <div id="app">
         <header className="ui fixed menu">
             <nav className="ui container">
                 <a href="#" className="header">
-                   Lista kontaktów
+                    Lista Dokumentów
                 </a>
                 <div className="header">
-                    <button className="ui button2">Dodaj</button>
+                    <button className="button"> <a href="http://localhost:3000/adddocument.html">Dodaj Dokument</a></button>
+                </div>
+            </nav>
+        </header>
+    </div>
+
+    <script type="text/babel">
+        function AppHeader() {
+        return (
+        <header className="menu">
+            <nav className="container">
+                <a href="#" className="header">
+                    Lista kontaktów
+                </a>
+                <div className="header">
+                    <button className="button2">Dodaj</button>
                 </div>
             </nav>
         </header>
@@ -51,18 +57,18 @@
 
         function DocumentList() {
         return (
-        <ul className="ui relaxed divided list selection">
+        <ul className="documentlist">
             <DocumentItem name="Document1"
-                         description="OPIS"
-                         date="21.07" />
+                          description="OPIS"
+                          date="21.07" />
 
             <DocumentItem name="Document1"
-                         description="OPIS"
-                         date="21.07" />
+                          description="OPIS"
+                          date="21.07" />
 
             <DocumentItem name="Document1"
-                         description="OPIS"
-                         date="21.07" />
+                          description="OPIS"
+                          date="21.07" />
         </ul>
         );
         }
@@ -70,7 +76,6 @@
         function DocumentSpecification({ name, description, date }) {
         return (
         <li className="item">
-            <img src={imgUrl} className="ui mini rounded image" />
             <div className="name">
                 <h4 className="description">{description}</h4>
                 <div className="date">{date}</div>
@@ -84,7 +89,7 @@
         return (
         <div>
             <AppHeader />
-            <main className="ui main text container">
+            <main className="app">
                 <DocumentList />
             </main>
         </div>
@@ -92,7 +97,7 @@
         }
         ReactDOM.render(
         <App />, document.getElementById("app"));
-   
 
 
-
+    </script>
+</body>

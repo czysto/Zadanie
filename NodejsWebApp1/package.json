@@ -1,19 +1,19 @@
 {
-  "name": "nodejs-web-app1",
-  "version": "0.0.0",
-  "description": "NodejsWebApp1",
-  "main": "server.js",
-  "author": {
-    "name": ""
-  },
-  "dependencies": {
-    "express": "^4.17.1",
-    "path": "^0.12.7",
-    "react": "^16.8.6",
-    "react-dom": "^16.8.6",
-    "ts-loader": "^6.0.4",
-    "typescript": "^3.5.3",
-    "webpack": "^4.35.3",
-    "webpack-cli": "^3.3.6"
-  }
+    "name": "nodejs-web-app1",
+    "version": "0.0.0",
+    "description": "NodejsWebApp1",
+    "main": "server.js",
+    "author": {
+        "name": ""
+    },
+    "dependencies": {
+        "express": "^4.17.1",
+        "path": "^0.12.7",
+        "react": "^16.8.6",
+        "react-dom": "^16.8.6",
+        "ts-loader": "^6.0.4",
+        "typescript": "^3.5.3",
+        "webpack": "^4.35.3",
+        "webpack-cli": "^3.3.6"
+    }
 }
